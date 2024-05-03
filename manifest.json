@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Remove discuss",
+    "description": "Just a extension for remove disqus comment box",
+    "version": "1.0",
+    "icons": {
+        "16": "/icon/RD16.png",
+        "48": "/icon/RD48.png",
+        "128": "/icon/RD128.png"
+    },
+    "permissions": [
+    ],
+    "background": {
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.animeflv.net/*",
+                "https://*.mundodonghua.com/*"
+            ],
+            "js": ["/scripts/removeDisqus.js"]
+        }
+    ]
+}
